@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+        <link href="css/font/css/fontawesome.css" rel="stylesheet">
+        <link href="css/font/css/brands.css" rel="stylesheet">
+        <link href="css/font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Checout page</title>
+    </head>
+
+    <body>
+
+        <header>
+            <nav id="navbar">
+                <form>
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+                <ul>   
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#popular-products">Products</a></li>
+                    <li><a href="index.html" class="logo">Logo!</a></li>
+                    <li><a href="index.html#popular-categories">Categories</a></li>
+                    <li><a href="#footer-contact-us">Contact us</a></li>
+                </ul>
+                <ul>
+                    <li><a><i class="fa-solid fa-user"></i></a></li>
+                    <li><a><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Checkout</h2>
+
+            <section id="shopping-cart">
+                <h3>1. Your shopping cart</h3>
+
+                <article class="product">
+                    <a href="product.html"><img src="img/products/tshirt_white.png" alt="White T-shirt."></a>
+                    <article>
+                        <h4>White T-shirt</h4>
+                        <p>Kr 1337</p>
+                        <p>Color: <b>White</b></p>
+                        <form class="product-checkout-flex">
+                            <label for="select-size-checkout">Size:</label>
+                            <select name="select-size-checkout">
+                                <option value="M">M</option>
+                                <option value="XXS">XXS</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>    
+                            </select>
+                            <label for="checkout-number">Amount:</label>
+                            <input  type="number" value="1" min="1" max="50">
+                        </form>
+                        <i class="fa-regular fa-heart checkout-heart"></i><i class="fa-solid fa-trash checkout-trash"></i>
+                    </article>
+                </article>
+
+                <article class="product">
+                    <a href="product.html"><img src="img/products/tshirt_purple.png" alt="Purple T-shirt."></a>
+                    <article>
+                        <h4>Purple T-shirt</h4>
+                        <p>Kr 1337</p>
+                        <p>Color: <b>Purple</b></p>
+                        <form class="product-checkout-flex">
+                            <label for="select-size-checkout">Size:</label>
+                            <select name="select-size-checkout">
+                                <option value="M">M</option>
+                                <option value="XXS">XXS</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>    
+                            </select>
+                            <label for="checkout-number">Amount:</label>
+                            <input  type="number" value="1" min="1" max="50">
+                        </form>
+                        <i class="fa-regular fa-heart checkout-heart"></i><i class="fa-solid fa-trash checkout-trash"></i>
+                    </article>
+                </article>
+                <article class="product">
+                    <a href="product.html"><img src="img/products/tshirt_red.png" alt="Red T-shirt."></a>
+                    <article>
+                        <h4>Red T-shirt</h4>
+                        <p>Kr 1337</p>
+                        <p>Color: <b>Red</b></p>
+                        <form class="product-checkout-flex">
+                            <label for="select-size-checkout">Size:</label>
+                            <select name="select-size-checkout">
+                                <option value="M">M</option>
+                                <option value="XXS">XXS</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>    
+                            </select>
+                            <label for="checkout-number">Amount:</label>
+                            <input  type="number" value="1" min="1" max="50">
+                        </form>
+                        <i class="fa-regular fa-heart checkout-heart"></i><i class="fa-solid fa-trash checkout-trash"></i>
+                    </article>
+                </article>
+            </section>
+
+            <section id="personal-information">
+                <h3>2. Your information</h3>
+                <form>
+                    <p id="p-info-delivery-adress">Delivery adress</p>
+                    <label for="p-info-fn">First name</label>
+                    <input type="text" placeholder="First name*" id="p-info-fn" name="p-info-fn">
+                    <label for="p-info-ln">Last name</label>
+                    <input type="text" placeholder="Last name*" id="p-info-ln" name="p-info-ln">
+                    <label for="p-info-adress" id="p-info-adress-label">Street adress</label>
+                    <input type="text" placeholder="Adress*" id="p-info-adress" name="p-info-adress">
+                    <label for="p-info-postal">Postal code</label>
+                    <input type="number" placeholder="Postal code*" id="p-info-postal" name="p-info-postal">
+                    <label for="p-info-city">City</label>
+                    <input type="text" placeholder="City*" id="p-info-city" name="p-info-city">
+                    <p id="p-info-contact-info">Contact information</p>
+                    <label for="p-info-email" id="p-info-email-label">E-Mail</label>
+                    <input type="email" placeholder="person@mail.com" id="p-info-email" name="p-info-email">
+                    <label for="p-info-phone" id="p-info-phone-label">Phone number</label>
+                    <input type="tel" placeholder="+4712345678" pattern="+47[0-9]{3}[0-9]{2}[0-9]{3}" id="p-info-phone" name="p-info-phone">
+                    <input type="submit" value="Save" id="save-personal-info">
+                    <input type="reset" value="Cancel" id="reset-personal-info">
+                </form>
+            </section>
+
+            <section id="delivery">
+                <h3>3. Delivery</h3>
+
+                <form>
+                    <article class="delivery-box">
+                        <input type="radio" id="express-home" name="delivery" value="Express delivery home">
+                        <label for="express-home"><b>Express delivery home</b></label><br>
+                        <p class="delivery-time">2-3 days</p>
+                        <p><b>kr 119</b> <i class="fa-solid fa-truck-fast"></i></p>
+                        <p>The package is delivered to your homes.</p>
+                    </article>
+                    <article class="delivery-box">
+                        <input type="radio" id="express-location" name="delivery" value="Express delivery to location">
+                        <label for="express-location"><b>Express delivery to location</b></label><br>
+                        <p class="delivery-time">1-2 days</p>
+                        <p><b>kr 89</b> <i class="fa-solid fa-shop"></i></p>
+                        <p>The package is delivered to a place near you.</p>
+                    </article>
+                    <article class="delivery-box">
+                        <input type="radio" id="standard-home" name="delivery" value="Standard delivery home">
+                        <label for="standard-home"><b>Standard delivery home</b></label><br>
+                        <p class="delivery-time">5-7 days</p>
+                        <p><b>kr 39</b> <i class="fa-solid fa-truck"></i></p>
+                        <p>The package is delieverd home to you.</p>
+                    </article>
+                </form>
+            </section>
+
+            <section id="payment">
+                <h3>4. Payment</h3>
+
+                <h4>Pay with card <i class="fa-solid fa-credit-card"></i></h4>
+                <form>
+                    <article id="pay-with-card-grid">
+                        <label for="card-number" id="card-number-label">Card number</label>
+                        <input type="number" placeholder="123456****7890" id="card-number">
+                        <label for="expiration-date">Expiration date</label>
+                        <input type="date" id="expiration-date">
+                        <label for="cvc-cvv">CVC/CVV</label>
+                        <input type="number" placeholder="CVC/CVV" id="cvc-cvv">
+                    </article>
+                    <article id="payment-info-flex">
+                        <p>To pay:</p>
+                        <p id="payment-amount">Kr 1337</p>
+                        <br>
+                        <input type="submit" value="Complete purchase" id="complete-purchase-button">
+
+                        <p>Du bekrefter herved at opplysningene og dokumentene du har
+                            oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
+                            retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                            uriktige eller ufullstendige opplysninger</p>
+                        
+                        <article>
+                            <input type="checkbox" id="checkbox-newsletter" value="Yes please! Send me newsletters.">
+                            <label for="checkbox-newsletter" id="checkbox-newsletter-label">Yes please! Send me newsletters.</label>
+                        </article>
+                        <article>
+                            <input type="checkbox" id="checkbox-messages" value="I wish to receive messages about offers and news.">
+                            <label for="checkbox-messages" id="checkbox-messages-label">I wish to receive messages.</label>
+                        </article>
+                    </article>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+
+            <section id="footer-logo-and-ingress">
+                <a class="logo" href="index.html">Logo!</a>
+                <p>Lorem ipquisquam id vel suscipit labore temporibus necessitatibus perspiciatis alias expedita accusam!</p>
+            </section>
+
+            <section id="footer-contact-us">
+                <h3>Contact us</h3>
+                <ul>
+                    <li><p><b>Adress:</b> B R A Veien 4, 1757 Halden</p></li>
+                    <li><p><b>Phone:</b> 69 60 80 00</p></li>
+                    <li><p><b>Email:</b> halden@hiof.no</p></li>
+                    <li><p><b>Opening Hours:</b> Closes 15:00</p></li>
+                </ul>
+            </section>
+
+            <section id="footer-shortcuts">
+                <h3>Shortcuts</h3>
+                <ul>
+                    <li><a href="index.html#popular-products">Products</a></li>
+                    <li><a href="index.html#popular-categories">Categores</a></li>
+                    <li><a href="#footer-contact-us">Contact us</a></li>
+                </ul>
+            </section>
+
+            <section id="footer-social-links">
+                <h3>Social media</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+
+        </footer>
+    </body>
+</html>
